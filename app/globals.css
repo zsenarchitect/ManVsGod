@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .god-glow {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  }
+  
+  .human-glow {
+    box-shadow: 0 0 20px rgba(74, 144, 226, 0.5);
+  }
+  
+  .collective-glow {
+    box-shadow: 0 0 20px rgba(155, 89, 182, 0.5);
+  }
+  
+  .scenario-card {
+    @apply bg-gray-800 border border-gray-700 rounded-lg p-6 backdrop-blur-sm;
+    background: linear-gradient(135deg, rgba(31, 41, 55, 0.9), rgba(17, 24, 39, 0.9));
+  }
+  
+  .choice-button {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .choice-button:hover {
+    @apply shadow-lg;
+  }
+} 
