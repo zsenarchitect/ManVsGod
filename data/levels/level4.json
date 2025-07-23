@@ -1,0 +1,38 @@
+{
+  "id": 4,
+  "title": "The Rook's Endgame",
+  "description": "You are a rook in a complex endgame. You can trade rooks to simplify, or keep the tension for winning chances. The collective wisdom has studied this endgame extensively - will you follow their proven strategy?",
+  "piece": "rook",
+  "position": "endgame",
+  "boardState": "8/8/8/4k3/4P3/4K3/4R3/8 w - - 0 1",
+  "availableMoves": [
+    "e2e5",
+    "e2d2",
+    "e2f2",
+    "e2g2"
+  ],
+  "choiceA": "Trade rooks (e2e5)",
+  "choiceB": "Keep tension (e2d2)",
+  "hazard": "Extreme",
+  "difficulty": "Hard",
+  "category": "Endgame Strategy",
+  "philosophicalThemes": ["Simplification", "Tension", "Endgame Theory"],
+  "baseScore": 125,
+  "rebellionBonus": 100,
+  "probabilityIntensity": 0.55,
+  "background": "Rook endgames are the most common and complex in chess. The collective wisdom has analyzed thousands of similar positions to determine the best approach.",
+  "consequences": {
+    "choiceA": "Simplifies the position but may lead to a draw",
+    "choiceB": "Maintains winning chances but requires precise play"
+  },
+  "currencyCost": {
+    "moveCost": 125,
+    "disobediencePenalty": 250,
+    "survivalBonus": 100
+  },
+  "godMove": {
+    "suggestedMove": "e2e5",
+    "confidence": 80,
+    "reasoning": "This endgame is winning after the trade"
+  }
+} 

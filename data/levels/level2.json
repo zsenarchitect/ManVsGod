@@ -1,0 +1,38 @@
+{
+  "id": 2,
+  "title": "The Knight's Dilemma",
+  "description": "You wake up as a knight in the middle of a complex position. Your king is under pressure and you must choose between defending or attacking. The collective wisdom has seen this position before - will you trust their judgment?",
+  "piece": "knight",
+  "position": "midgame",
+  "boardState": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 1",
+  "availableMoves": [
+    "f3e5",
+    "f3d4",
+    "f3g5",
+    "f3h4"
+  ],
+  "choiceA": "Attack the center (f3e5)",
+  "choiceB": "Defend the king (f3d2)",
+  "hazard": "Medium",
+  "difficulty": "Easy",
+  "category": "Tactical Decision",
+  "philosophicalThemes": ["Attack vs Defense", "Risk Assessment", "Positional Understanding"],
+  "baseScore": 75,
+  "rebellionBonus": 50,
+  "probabilityIntensity": 0.25,
+  "background": "As a knight, you have unique movement patterns that can create tactical opportunities. The collective wisdom must balance attacking chances with defensive responsibilities.",
+  "consequences": {
+    "choiceA": "Aggressive move that may win material but risks king safety",
+    "choiceB": "Defensive move that protects the king but may lose initiative"
+  },
+  "currencyCost": {
+    "moveCost": 75,
+    "disobediencePenalty": 150,
+    "survivalBonus": 50
+  },
+  "godMove": {
+    "suggestedMove": "f3e5",
+    "confidence": 65,
+    "reasoning": "Most players prefer active play in this position"
+  }
+} 

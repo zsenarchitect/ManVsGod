@@ -1,0 +1,42 @@
+{
+  "id": 1,
+  "title": "Tutorial: The Pawn's Journey",
+  "description": "You are a pawn at the beginning of a chess game. Choose your preferred move and bet your currency. The collective wisdom of previous players will suggest a move - will you follow or disobey?",
+  "piece": "pawn",
+  "position": "starting",
+  "boardState": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "availableMoves": [
+    "e2e4",
+    "d2d4",
+    "c2c4",
+    "f2f4",
+    "g2g4",
+    "b2b4",
+    "a2a4",
+    "h2h4"
+  ],
+  "choiceA": "Move forward 2 squares (e2e4)",
+  "choiceB": "Move forward 1 square (e2e3)",
+  "hazard": "Low",
+  "difficulty": "Tutorial",
+  "category": "Opening Strategy",
+  "philosophicalThemes": ["Individual Choice", "Collective Wisdom", "Risk Assessment"],
+  "baseScore": 50,
+  "rebellionBonus": 25,
+  "probabilityIntensity": 0.10,
+  "background": "As a pawn, you have limited options but your choices set the tone for the entire game. The collective wisdom of previous players has learned which openings work best.",
+  "consequences": {
+    "choiceA": "Aggressive opening that controls the center",
+    "choiceB": "Conservative approach that maintains flexibility"
+  },
+  "currencyCost": {
+    "moveCost": 50,
+    "disobediencePenalty": 100,
+    "survivalBonus": 25
+  },
+  "godMove": {
+    "suggestedMove": "e2e4",
+    "confidence": 75,
+    "reasoning": "Most players prefer controlling the center with e4"
+  }
+} 

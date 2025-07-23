@@ -1,0 +1,38 @@
+{
+  "id": 5,
+  "title": "The Queen's Gambit",
+  "description": "You are the queen in the most critical position of the game. You can sacrifice yourself for a brilliant mate, or play conservatively to maintain advantage. The collective wisdom has never seen this exact position - will you trust your own judgment?",
+  "piece": "queen",
+  "position": "critical",
+  "boardState": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 1",
+  "availableMoves": [
+    "d1h5",
+    "d1e2",
+    "d1d2",
+    "d1c2"
+  ],
+  "choiceA": "Sacrifice queen for mate (d1h5)",
+  "choiceB": "Play safely (d1e2)",
+  "hazard": "Maximum",
+  "difficulty": "Impossible",
+  "category": "Ultimate Decision",
+  "philosophicalThemes": ["Ultimate Sacrifice", "Individual Genius", "Collective vs Personal"],
+  "baseScore": 150,
+  "rebellionBonus": 125,
+  "probabilityIntensity": 0.75,
+  "background": "Queen sacrifices are the rarest and most beautiful moves in chess. This position is unique - the collective wisdom has no precedent. You must rely on your own calculation and intuition.",
+  "consequences": {
+    "choiceA": "Spectacular queen sacrifice that leads to checkmate",
+    "choiceB": "Solid move that maintains advantage but may miss the win"
+  },
+  "currencyCost": {
+    "moveCost": 150,
+    "disobediencePenalty": 300,
+    "survivalBonus": 125
+  },
+  "godMove": {
+    "suggestedMove": "d1h5",
+    "confidence": 90,
+    "reasoning": "This unique position requires the queen sacrifice for mate"
+  }
+} 

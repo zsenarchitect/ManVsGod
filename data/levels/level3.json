@@ -1,0 +1,38 @@
+{
+  "id": 3,
+  "title": "The Bishop's Sacrifice",
+  "description": "You are a bishop in a critical position. You can sacrifice yourself to create a winning attack, or play safely to maintain material equality. The collective wisdom has analyzed this sacrifice - do you trust their calculation?",
+  "piece": "bishop",
+  "position": "complex",
+  "boardState": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP1N1PPP/R1BQ1RK1 w - - 0 1",
+  "availableMoves": [
+    "c4xf7",
+    "c4d5",
+    "c4e6",
+    "c4b3"
+  ],
+  "choiceA": "Sacrifice the bishop (c4xf7)",
+  "choiceB": "Play safely (c4d5)",
+  "hazard": "High",
+  "difficulty": "Medium",
+  "category": "Sacrifice Decision",
+  "philosophicalThemes": ["Sacrifice", "Calculation", "Intuition vs Analysis"],
+  "baseScore": 100,
+  "rebellionBonus": 75,
+  "probabilityIntensity": 0.40,
+  "background": "Bishop sacrifices are among the most beautiful and dangerous moves in chess. The collective wisdom must evaluate complex tactical lines to determine if the sacrifice is sound.",
+  "consequences": {
+    "choiceA": "Spectacular sacrifice that may lead to mate or material advantage",
+    "choiceB": "Solid move that maintains the position but may miss winning chances"
+  },
+  "currencyCost": {
+    "moveCost": 100,
+    "disobediencePenalty": 200,
+    "survivalBonus": 75
+  },
+  "godMove": {
+    "suggestedMove": "c4xf7",
+    "confidence": 70,
+    "reasoning": "The sacrifice leads to a winning attack in most lines"
+  }
+} 

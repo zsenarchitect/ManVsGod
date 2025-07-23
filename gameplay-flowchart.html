@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man vs God - Gameplay Flowchart</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .flowchart-container {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .legend {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .legend h3 {
+            margin-top: 0;
+            color: #ffd700;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .game-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            border-left: 4px solid #ffd700;
+        }
+        .feature-card h3 {
+            color: #ffd700;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Man vs God - Gameplay Flowchart</h1>
+        
+        <div class="legend">
+            <h3>📊 Flowchart Legend</h3>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ff6b6b;"></div>
+                <span>Start/End Points</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #4ecdc4;"></div>
+                <span>Player Actions</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #45b7d1;"></div>
+                <span>System/God Actions</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #96ceb4;"></div>
+                <span>Decision Points</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #feca57;"></div>
+                <span>Moral Dilemmas</span>
+            </div>
+        </div>
+
+        <div class="flowchart-container">
+            <div class="mermaid">
+                flowchart TD
+                    A[🎯 Start Game] --> B[💰 Receive 1000 Currency]
+                    B --> C[🎲 Randomly Assigned Chess Piece]
+                    C --> D[📊 Load Level & Chess Position]
+                    D --> E[🎭 Display Moral Dilemma]
+                    E --> F[🤔 Analyze Chess Position]
+                    F --> G[💸 Choose Preferred Move & Bet Currency]
+                    G --> H[👑 God Reveals Collective Wisdom Move]
+                    H --> I{🔍 Compare Bets}
+                    
+                    I -->|Your Bet > God's Bet| J[✅ You Can Choose Your Move]
+                    I -->|God's Bet > Your Bet| K[⚠️ Must Follow God or Pay Extra]
+                    
+                    J --> L[🎯 Execute Your Preferred Move]
+                    K --> M{🤷‍♂️ Follow God's Move?}
+                    
+                    M -->|Yes| N[👑 Execute God's Suggested Move]
+                    M -->|No| O[💸 Pay Disobedience Cost]
+                    O --> P[🎯 Execute Your Preferred Move]
+                    
+                    L --> Q[🎭 Check for Moral Dilemma]
+                    N --> Q
+                    P --> Q
+                    
+                    Q --> R{🎭 Moral Choice Required?}
+                    R -->|Yes| S[⚖️ Display Character Backstory]
+                    S --> T[🤔 Choose: Capture or Spare?]
+                    T --> U[📈 Update Moral Score]
+                    R -->|No| V[📊 Calculate Strategic Score]
+                    U --> V
+                    
+                    V --> W{🎯 Piece Captured?}
+                    W -->|Yes| X[💀 Game Over - Lose All Currency]
+                    W -->|No| Y{🎮 Level Complete?}
+                    
+                    Y -->|No| Z[🔄 Continue to Next Move]
+                    Z --> F
+                    Y -->|Yes| AA{🏆 All Levels Complete?}
+                    
+                    AA -->|No| BB[📈 Load Next Level]
+                    BB --> D
+                    AA -->|Yes| CC[🏆 Final Score Display]
+                    
+                    X --> DD[📊 Game Statistics]
+                    CC --> DD
+                    DD --> EE[📝 Submit Data to Google Form]
+                    EE --> FF[🎯 End Game]
+                    
+                    style A fill:#ff6b6b,stroke:#333,stroke-width:2px,color:#fff
+                    style FF fill:#ff6b6b,stroke:#333,stroke-width:2px,color:#fff
+                    style X fill:#ff6b6b,stroke:#333,stroke-width:2px,color:#fff
+                    style CC fill:#4ecdc4,stroke:#333,stroke-width:2px,color:#fff
+                    
+                    style G fill:#4ecdc4,stroke:#333,stroke-width:2px,color:#fff
+                    style L fill:#4ecdc4,stroke:#333,stroke-width:2px,color:#fff
+                    style P fill:#4ecdc4,stroke:#333,stroke-width:2px,color:#fff
+                    
+                    style H fill:#45b7d1,stroke:#333,stroke-width:2px,color:#fff
+                    style N fill:#45b7d1,stroke:#333,stroke-width:2px,color:#fff
+                    
+                    style I fill:#96ceb4,stroke:#333,stroke-width:2px,color:#fff
+                    style M fill:#96ceb4,stroke:#333,stroke-width:2px,color:#fff
+                    style R fill:#96ceb4,stroke:#333,stroke-width:2px,color:#fff
+                    style W fill:#96ceb4,stroke:#333,stroke-width:2px,color:#fff
+                    style Y fill:#96ceb4,stroke:#333,stroke-width:2px,color:#fff
+                    style AA fill:#96ceb4,stroke:#333,stroke-width:2px,color:#fff
+                    
+                    style E fill:#feca57,stroke:#333,stroke-width:2px,color:#fff
+                    style S fill:#feca57,stroke:#333,stroke-width:2px,color:#fff
+                    style T fill:#feca57,stroke:#333,stroke-width:2px,color:#fff
+            </div>
+        </div>
+
+        <div class="game-features">
+            <div class="feature-card">
+                <h3>🎯 Core Mechanics</h3>
+                <ul>
+                    <li><strong>Betting System:</strong> Players bet currency on moves</li>
+                    <li><strong>Collective Wisdom:</strong> God suggests moves based on previous players</li>
+                    <li><strong>Disobedience Cost:</strong> Pay extra to ignore God's suggestion</li>
+                    <li><strong>Dual Scoring:</strong> Strategic score + Moral score</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3>🎭 Moral Dilemmas</h3>
+                <ul>
+                    <li><strong>Character Backstories:</strong> Rich narratives for each piece</li>
+                    <li><strong>Moral Choices:</strong> Capture or spare with consequences</li>
+                    <li><strong>Philosophical Themes:</strong> Utilitarianism vs Deontology</li>
+                    <li><strong>Progressive Difficulty:</strong> More complex moral situations</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3>📊 Data Collection</h3>
+                <ul>
+                    <li><strong>Player Decisions:</strong> Track all choices and timing</li>
+                    <li><strong>Google Forms:</strong> Real-time data submission</li>
+                    <li><strong>Error Logging:</strong> Comprehensive error tracking</li>
+                    <li><strong>Analytics:</strong> Collective wisdom evolution</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3>🎮 Game Flow</h3>
+                <ul>
+                    <li><strong>10 Progressive Levels:</strong> Increasing complexity</li>
+                    <li><strong>Random Piece Assignment:</strong> Different perspectives each game</li>
+                    <li><strong>Real Chess Positions:</strong> Famous games and puzzles</li>
+                    <li><strong>Mobile Responsive:</strong> Play on any device</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+    </script>
+</body>
+</html> 
